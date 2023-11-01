@@ -1,4 +1,4 @@
-package executavel;
+package exercicio;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
