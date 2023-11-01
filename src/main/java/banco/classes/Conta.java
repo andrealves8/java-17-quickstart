@@ -1,6 +1,5 @@
 package banco.classes;
 
-
 import java.util.Random;
 
 import banco.interfaces.IConta;

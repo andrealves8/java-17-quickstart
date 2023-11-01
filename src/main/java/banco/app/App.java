@@ -16,9 +16,11 @@ public class App {
         Conta cp = new ContaPoupanca(cli);
 
         // métodos de operações bancárias
-        cp.depositar(200);
+        cp.depositar(100);
+        cc.depositar(100);
+        cc.transferir(100, cp);
         cp.transferir(100, cc);
-
+        
         // método de impressão de extrato
         cc.imprimirExtrato();
         cp.imprimirExtrato();

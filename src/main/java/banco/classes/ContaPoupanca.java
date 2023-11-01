@@ -11,7 +11,6 @@ public class ContaPoupanca extends Conta {
     public void transferir(double valor, Conta contaDestino) {
         super.transferir(valor, contaDestino);
         super.saldo -= 0.1;
-
     }
 
     @Override
