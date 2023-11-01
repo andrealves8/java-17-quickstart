@@ -1,20 +1,14 @@
 package banco.classes;
 
-import java.util.Random;
 
 import banco.interfaces.IConta;
 
 public abstract class Conta implements IConta {
-
-    Random random = new Random();
-    int min = 100000, max = 999999;
-    String numeroGerado = String.valueOf(random.nextInt((max - min) + 1) + min);
-    String p1 = numeroGerado.substring(0, 5);
-    String p2 = numeroGerado.substring(numeroGerado.length() - 1);
+   
+    GeradorDeContas gerador = new GeradorDeContas();
 
     private static final int AGENCIA_PADRAO = 332;
-    private String numeroConta = p1 + "-" + p2;
-
+    private String numeroConta = gerador.getNumeroGerado() ;
     protected int agencia;
     protected String numero;
     protected double saldo;
