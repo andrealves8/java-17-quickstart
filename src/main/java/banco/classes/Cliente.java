@@ -4,11 +4,13 @@ public class Cliente {
 
 	private String nome;
 	private String cpf;
-
-	public Cliente(String nome, String cpf) {
+	private String dataNascimento;
+	
+	public Cliente(String nome, String cpf, String dataNascimento) {
 		super();
 		this.nome = nome;
 		this.cpf = cpf;
+		this.dataNascimento = dataNascimento;
 	}
 
 	public String getNome() {
@@ -26,5 +28,22 @@ public class Cliente {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
+	public String getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(String dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [nome=" + nome + ", cpf=" + cpf + ", dataNascimento=" + dataNascimento + "]";
+	}
+	
+	
+
+	
 
 }
