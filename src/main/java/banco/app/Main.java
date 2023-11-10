@@ -32,8 +32,8 @@ public class Main {
 		cc.depositar(100);
 		cc.depositar(200);
 		cc.depositar(120);
-		cp.transferir(130, cc);
-		cc.sacar(290);
+		cc.transferir(130, cp);
+		cc.sacar(103);
 		cp.depositar(160);
 	
 		// Método de impressão de extrato

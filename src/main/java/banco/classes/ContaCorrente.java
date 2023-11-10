@@ -1,12 +1,13 @@
 package banco.classes;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class ContaCorrente extends Conta {
 	private static final String DEBITO = "d";
 	private static final String CREDITO = "c";
 
-	HashMap<String, Double> transacoes = new HashMap<>();
+	Map<String, Double> transacoes = new HashMap<>();
 
 	public ContaCorrente(Cliente cliente) {
 		super(cliente);
