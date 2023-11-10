@@ -23,22 +23,23 @@ public class Main {
 		DateTimeFormatter dataFormatada = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		dtNasc.format(dataFormatada);
 		
-		Cliente cli = new Cliente(nome, cpf, dataNascimento);
+		Cliente cliente1 = new Cliente(nome, cpf, dataNascimento);
+		Cliente cliente2 = new Cliente("João", "243.726.188-00", "10/11/1980");
 
-		ContaCorrente cc = new ContaCorrente(cli);
-		ContaPoupanca cp = new ContaPoupanca(cli);
+		ContaCorrente cc = new ContaCorrente(cliente1);
+		ContaPoupanca cp = new ContaPoupanca(cliente2);
 
 		// Métodos básicos de operações bancárias
 		cc.depositar(100);
 		cc.depositar(200);
-		cc.depositar(20);
-		cc.transferir(30, cp);
-		cc.sacar(90);
-		cp.depositar(60);
+		cc.depositar(120);
+		cp.transferir(130, cc);
+		cc.sacar(290);
+		cp.depositar(160);
 	
 		// Método de impressão de extrato
 		cc.imprimirExtrato();
-		//cp.imprimirExtrato();
+	    //cp.imprimirExtrato();
 	}
 
 }

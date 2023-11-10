@@ -42,11 +42,11 @@ public class ContaPoupanca extends Conta {
 	}
 	
 	public void creditos() {
-		System.out.println(String.format("Cc: %.2f", transacoes.getOrDefault(CREDITO, 0.0)) + CREDITO);		
+		System.out.println(String.format("$ c_p: %.2f", transacoes.getOrDefault(CREDITO, 0.0)) + CREDITO);		
 	}
 
 	public void debitos() {
-		System.out.println(String.format("Cp: %.2f", transacoes.getOrDefault(DEBITO, 0.0)) + DEBITO);
+		System.out.println(String.format("$ c_p: %.2f", transacoes.getOrDefault(DEBITO, 0.0)) + DEBITO);
 	}
 
 }
