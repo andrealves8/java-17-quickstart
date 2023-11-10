@@ -6,9 +6,9 @@ public class Cliente {
 	private String cpf;
 	private String dataNascimento;
 	
-	public Cliente(String nome, String cpf, String dataNascimento) {
+	public Cliente(String titular, String cpf, String dataNascimento) {
 		super();
-		this.nome = nome;
+		this.nome = titular;
 		this.cpf = cpf;
 		this.dataNascimento = dataNascimento;
 	}
@@ -37,10 +37,9 @@ public class Cliente {
 		this.dataNascimento = dataNascimento;
 	}
 
-	@Override
-	public String toString() {
-		return "Cliente [nome=" + nome + ", cpf=" + cpf + ", dataNascimento=" + dataNascimento + "]";
-	}
+	
+
+	
 	
 	
 
