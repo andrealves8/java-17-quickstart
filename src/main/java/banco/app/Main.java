@@ -13,7 +13,6 @@ public class Main {
 		String nome = "André Alves";
 		String cpf = "023.756.888-90";
 		String dataNascimento = "11/04/1987";
-		String discricao = "coisa e tal...";
 
 		/*
 		 * Esse bloco de código a seguir é responsável pela criação de um objeto do tipo
